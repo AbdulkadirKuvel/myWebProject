@@ -21,7 +21,7 @@
             ) {
                 echo "HOŞGELDİN b221210002!";
             } else {
-                echo "Hatalı Giriş";
+                header('Location: ' . $_SERVER['HTTP_REFERER']);
             }
             ?>
         </p>
