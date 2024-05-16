@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <title>İletişim | Abdulkadir Kuvel</title>
+</head>
+
+<body>
+    <div class="container connect">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Kişisel Bilgiler</legend>
+                <label for="first name">İsminiz: </label>
+                <input type="text" name="first name" id="first name"> <br>
+                <label for="last name">Soyisminiz: </label>
+                <input type="text" name="last name" id="last name"> <br>
+                <label for="gender">Cinsiyetiniz: </label>
+                <input type="radio" name="gender" id="male"> Erkek
+                <input type="radio" name="gender" id="female"> Kadın <br>
+                <label for="birth">Doğum Tarihiniz: </label>
+                <input type="date" name="birth" id="birth">
+            </fieldset>
+            <hr>
+            <label for="hobbies">İsterseniz İlgi Alanlarınızı Paylaşabilirsiniz</label> <br>
+            <input type="checkbox" name="hobby" id=""> Kitaplar
+            <input type="checkbox" name="hobby" id=""> Spor
+            <input type="checkbox" name="hobby" id=""> Yazılım
+            <input type="checkbox" name="hobby" id=""> Borsa <br>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Başka Bir Şey..."></textarea> <br>
+            <label for="s">Bana ulaşma amacınız nedir?</label> <br>
+            <select name="" id="">
+                <option value="volvo">İş / Staj</option>
+                <option value="saab"></option>
+                <option value="fiat"></option>
+                <option value="audi" selected></option>
+            </select>
+            <hr>
+            <label for="email">E-Posta Adresiniz: </label>
+            <input type="email" name="email" id="email">
+            <hr>
+            <label for="university">Okumakta Olduğunuz Bir Üniversite Varsa <br> Lütfen Yazınız</label>
+            <input list="university">
+            <datalist id="university">
+                <option value="Sakarya Üniversitesi">
+                <option value="Sakarya Uygulamalı Bilimler Üniversitesi">
+                <option value="İstanbul Teknik Üniversitesi">
+                <option value="Boğaziçi Üniversitesi">
+                <option value="Selçuk Üniversitesi">
+            </datalist>
+            <hr>
+            <label for="">Bahsetmek İstediğiniz Başka Bir Şey Var Mı?</label> <br>
+            <textarea name="" id="" cols="55" rows="4"></textarea>
+            <hr>
+            <button onclick="checkAll()">Gönder</button>
+            <button onclick="">Gönder</button>
+        </form>
+    </div>
+</body>
